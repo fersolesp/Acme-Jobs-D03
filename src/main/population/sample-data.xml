@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+- sample-data.xml
+-
+- Copyright (c) 2019 Rafael Corchuelo.
+-
+- In keeping with the traditional purpose of furthering education and research, it is
+- the policy of the copyright owner to permit non-commercial use and redistribution of
+- this software. It has been tested carefully, but it is not guaranteed for any particular
+- purposes.  The copyright owner does not offer any warranties or representations, nor do
+- they accept any liabilities with respect to them.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="conversion-service.xml" />
+		
+		<!-- Shouts -->
+
+	<bean id="shout01" class="acme.entities.shouts.Shout">
+		<property name="author" value="John Doe"/>
+		<property name="text" value="I'm happy!"/>
+		<property name="moment" value="2019/09/09 10:00"/>
+	</bean>
+
+	<bean id="shout02" class="acme.entities.shouts.Shout">
+		<property name="author" value="Jane Doe"/>
+		<property name="text" value="I'm the master of my room!"/>
+		<property name="moment" value="2019/08/09 15:55"/>
+	</bean>
+	
+	<bean id="shout03" class="acme.entities.shouts.Shout">
+		<property name="author" value="Foo Bar"/>
+		<property name="text" value="Just turning 20!"/>
+		<property name="moment" value="2019/09/07 00:00"/>
+	</bean>
+	
+	<!-- CornacBulletins -->
+	
+	<bean id="cornacBulletin01" class="acme.entities.cornacBulletin.CornacBulletin">
+		<property name="publisher" value="Rolan"/>
+		<property name="publication" value="Hi!"/>
+		<property name="moment" value="2019/09/21 15:02"/>
+	</bean>
+
+	<bean id="cornacBulletin02" class="acme.entities.cornacBulletin.CornacBulletin">
+		<property name="publisher" value="Joscorfis"/>
+		<property name="publication" value="Bye!"/>
+		<property name="moment" value="2019/08/31 02:36"/>
+	</bean>
+	
+		<!-- BlascoBulletins -->
+
+	<bean id="blascoBulletin01" class="acme.entities.blascoBulletins.BlascoBulletin">
+		<property name="userName" value="Jodoe"/>
+		<property name="description" value="I'm using acme-jobs"/>
+		<property name="moment" value="2019/09/09 10:00"/>
+	</bean>
+
+	<bean id="blascoBulletin02" class="acme.entities.blascoBulletins.BlascoBulletin">
+		<property name="userName" value="Jandoe"/>
+		<property name="description" value="I'm starting my new bussiness"/>
+		<property name="moment" value="2019/08/09 15:55"/>
+	</bean>
+	
+	<bean id="blascoBulletin03" class="acme.entities.blascoBulletins.BlascoBulletin">
+		<property name="userName" value="Foobar"/>
+		<property name="description" value="I'm looking for a job"/>
+		<property name="moment" value="2019/09/07 00:00"/>
+	</bean>
+			
+	<!-- PradasBulletin -->
+
+	<bean id="pradasBulletin01" class="acme.entities.pradasBulletin.PradasBulletin">
+		<property name="person" value="Emily Williams"/>
+		<property name="information" value="Hello everybody"/>
+		<property name="moment" value="2019/07/09 10:10"/>
+	</bean>
+
+	<bean id="pradasBulletin02" class="acme.entities.pradasBulletin.PradasBulletin">
+		<property name="person" value="Barbara Simons"/>
+		<property name="information" value="I'm nervous"/>
+		<property name="moment" value="2019/08/10 10:55"/>
+	</bean>
+	
+	<bean id="pradasBulletin03" class="acme.entities.pradasBulletin.PradasBulletin">
+		<property name="person" value="Betty Pepper"/>
+		<property name="information" value="It's too late"/>
+		<property name="moment" value="2019/10/07 00:00"/>
+  </bean>
+	
+	<!-- CardenalBulletins -->
+
+	<bean id="cardenalBulletin01" class="acme.entities.cardenalBulletins.CardenalBulletin">
+		<property name="developer" value="Federico Costa"/>
+		<property name="skills" value="Java"/>
+		<property name="moment" value="2019/09/09 13:00"/>
+	</bean>
+
+	<bean id="cardenalBulletin02" class="acme.entities.cardenalBulletins.CardenalBulletin">
+		<property name="developer" value="Josh Williams"/>
+		<property name="skills" value="PL/SQL"/>
+		<property name="moment" value="2019/06/09 15:55"/>
+	</bean>
+	
+	<bean id="cardenalBulletin03" class="acme.entities.cardenalBulletins.CardenalBulletin">
+		<property name="developer" value="Robert Wellis"/>
+		<property name="skills" value="C++"/>
+		<property name="moment" value="2019/09/12 00:00"/>
+  </bean>
+  
+    <!-- SolaBulletins -->
+
+	<bean id="solaBulletin01" class="acme.entities.solaBulletins.SolaBulletin">
+		<property name="cybernaut" value="Juan Perez"/>
+		<property name="contribution" value="Hoy puede ser un gran dia"/>
+		<property name="moment" value="2019/08/05 12:00"/>
+	</bean>
+
+	<bean id="solaBulletin02" class="acme.entities.solaBulletins.SolaBulletin">
+		<property name="cybernaut" value="Francisco Olivero"/>
+		<property name="contribution" value="I love going out with my friends!"/>
+		<property name="moment" value="2019/06/15 18:30"/>
+	</bean>
+	
+	<bean id="solaBulletin03" class="acme.entities.solaBulletins.SolaBulletin">
+		<property name="cybernaut" value="Antonio Berrocal"/>
+		<property name="contribution" value="Caminante no hay camino, se hace camino al andar"/>
+		<property name="moment" value="2019/09/22 01:45"/>
+	</bean>
+	
+	<!-- Announcements -->
+	
+	<bean id="announcement01" class="acme.entities.announcements.Announcement">
+        <property name="title" value="Sample announcement 01"/>
+        <property name="moment" value="2019/06/10 10:35"/>
+        <property name="moreInfo" value="http://www.example.com"/>
+        <property name="text" value="This is the descrition of another announcement"/>
+    </bean>
+
+    <bean id="announcement02" class="acme.entities.announcements.Announcement">
+        <property name="title" value="Sample announcement 02"/>
+        <property name="moment" value="2019/06/10 00:00"/>
+        <property name="moreInfo" value="http://www.example.com"/>
+        <property name="text" value="This is the descrition of another announcement"/>
+    </bean>
+
+    <bean id="announcement03" class="acme.entities.announcements.Announcement">
+        <property name="title" value="Sample very old announcement 03"/>
+        <property name="moment" value="1900/10/10 19:10"/>
+        <property name="moreInfo" value="http://www.example.com"/>
+        <property name="text" value="This is a very old announcement"/>
+  </bean>
+
+    <bean id="announcement04" class="acme.entities.announcements.Announcement">
+        <property name="title" value="Sample of announcement 04"/>
+        <property name="moment" value="2019/10/20 19:10"/>
+        <property name="moreInfo"><null/></property>
+        <property name="text" value="This is an announcement"/>
+    </bean>
+
+  <!-- Requests -->
+    <bean id="request01" class="acme.entities.requests.Request">
+    	<property name="title" value="Request 01"/>
+    	<property name="moment" value="2019/06/10 00:00"/>
+    	<property name="deadline" value="2019/08/10 00:00"/>
+    	<property name="text" value="This is a description"/> 
+    	<property name="reward" value="3000€"/>
+    	<property name="ticker" value="RABCD-12345"/>
+    </bean>
+        <bean id="request02" class="acme.entities.requests.Request">
+    	<property name="title" value="Request 02"/>
+    	<property name="moment" value="2019/05/24 17:00"/>
+    	<property name="deadline" value="2020/09/30 00:00"/>
+    	<property name="text" value="This is a description of another request"/> 
+    	<property name="reward" value="2000€"/>
+    	<property name="ticker" value="RQORE-22360"/>
+    </bean>
+        <bean id="request03" class="acme.entities.requests.Request">
+    	<property name="title" value="Request 03"/>
+    	<property name="moment" value="2019/10/20 12:00"/>
+    	<property name="deadline" value="2020/07/07 00:00"/>
+    	<property name="text" value="This is a description of the request 03"/> 
+    	<property name="reward" value="1500€"/>
+    	<property name="ticker" value="RAHJS-92367"/>
+    </bean>
+  
+    	<!-- InvestorRecords -->
+	<bean id="investorRecords01" class="acme.entities.investorRecords.InvestorRecords">
+        <property name="investorName" value="Investor name 01"/>
+        <property name="workSector" value="WorkSector 03"/>
+        <property name="investingStatement" value="This is an investing statement"/>
+        <property name="stars" value="0"/>
+    </bean>
+
+    <bean id="investorRecords02" class="acme.entities.investorRecords.InvestorRecords">
+        <property name="investorName" value="Investor name 02"/>
+        <property name="workSector" value="WorkSector 02"/>
+        <property name="investingStatement" value="This is an investing statement"/>
+    </bean>
+
+    <bean id="investorRecords03" class="acme.entities.investorRecords.InvestorRecords">
+        <property name="investorName" value="Investor name 03"/>
+        <property name="workSector" value="WorkSector 01"/>
+        <property name="investingStatement" value="This is an investing statement"/>
+        <property name="stars" value="5"/>
+    </bean>
+    
+     <bean id="investorRecords04" class="acme.entities.investorRecords.InvestorRecords">
+        <property name="investorName" value="Investor name 04"/>
+        <property name="workSector" value="WorkSector 01"/>
+        <property name="investingStatement" value="This is an investing statement"/>
+        <property name="stars" value="4"/>
+    </bean>
+    
+    	<!-- CompanyRecords -->
+    
+    <bean id="companyRecord01" class="acme.entities.companyRecords.CompanyRecord">
+    	<property name="companyName" value="NightSkills, Inc."/>
+    	<property name="sector" value="WorkSector 03"/>
+    	<property name="ceo" value="Iván Espinosa"/>
+    	<property name="description" value="This is our first company record for the fans"/>
+    	<property name="url" value="http://www.example.com"/>
+    	<property name="phone" value="+034945876321"/>
+    	<property name="email" value="example@alum.us.es"/>
+    	<property name="incorporated" value="true"/>
+    	<property name="stars"><null/></property>
+    </bean>
+    
+    <bean id="companyRecord02" class="acme.entities.companyRecords.CompanyRecord">
+    	<property name="companyName" value="Fekyx, LLC"/>
+    	<property name="sector" value="WorkSector 01"/>
+    	<property name="ceo" value="Javier Maroto"/>
+    	<property name="description" value="This is our first company record for the follower"/>
+    	<property name="url" value="http://www.example.com"/>
+    	<property name="phone" value="+034(1009)998721309"/>
+    	<property name="email" value="example@alum.us.es"/>
+    	<property name="incorporated" value="false"/>
+    	<property name="stars" value="5"/>
+    </bean>
+    
+    <bean id="companyRecord03" class="acme.entities.companyRecords.CompanyRecord">
+    	<property name="companyName" value="Neek, Inc."/>
+    	<property name="sector" value="WorkSector 02"/>
+    	<property name="ceo" value="Iván García"/>
+    	<property name="description" value="This is our first company record for the integrants of the organization"/>
+    	<property name="url" value="http://www.example.com"/>
+    	<property name="phone" value="900851234"/>
+    	<property name="email" value="example@alum.us.es"/>
+    	<property name="incorporated" value="true"/>
+    	<property name="stars" value="4"/>
+    </bean>
+    
+     <bean id="companyRecord04" class="acme.entities.companyRecords.CompanyRecord">
+    	<property name="companyName" value="Neek, Inc."/>
+    	<property name="sector" value="WorkSector 04"/>
+    	<property name="ceo" value="Iván García"/>
+    	<property name="description" value="This is our first company record for the integrants of the organization"/>
+    	<property name="url" value="http://www.example.com"/>
+    	<property name="phone" value="+034900851234"/>
+    	<property name="email" value="example@alum.us.es"/>
+    	<property name="incorporated" value="true"/>
+    	<property name="stars" value="4"/>
+    </bean>
+	
+	<!-- Challenges -->
+	<bean id="challenge01" class="acme.entities.challenges.Challenge">
+        <property name="title" value="Sample challenge 01"/>
+        <property name="deadline" value="2020/06/10 10:35"/>
+        <property name="description" value="Challenge number 1!"/>
+        <property name="goldGoal" value="This is the Gold level goal"/>
+        <property name="goldReward" value="5€"/>
+        <property name="silverGoal" value="This is the Silver level goal"/>
+        <property name="silverReward" value="2€"/>
+        <property name="bronzeGoal" value="This is the Bronze level goal"/>
+        <property name="bronzeReward" value="1€"/>
+    </bean>
+
+    <bean id="challenge02" class="acme.entities.challenges.Challenge">
+        <property name="title" value="Sample challenge 02"/>
+        <property name="deadline" value="2020/11/10 10:35"/>
+        <property name="description" value="Challenge number 2!"/>
+        <property name="goldGoal" value="This is the Gold level goal"/>
+        <property name="goldReward" value="5€"/>
+        <property name="silverGoal" value="This is the Silver level goal"/>
+        <property name="silverReward" value="2€"/>
+        <property name="bronzeGoal" value="This is the Bronze level goal"/>
+        <property name="bronzeReward" value="1€"/>
+    </bean>
+	
+	<bean id="challenge03" class="acme.entities.challenges.Challenge">
+        <property name="title" value="Sample challenge 03"/>
+        <property name="deadline" value="2020/06/10 10:35"/>
+        <property name="description" value="Challenge number 3!"/>
+        <property name="goldGoal" value="This is the Gold level goal"/>
+        <property name="goldReward" value="5€"/>
+        <property name="silverGoal" value="This is the Silver level goal"/>
+        <property name="silverReward" value="2€"/>
+        <property name="bronzeGoal" value="This is the Bronze level goal"/>
+        <property name="bronzeReward" value="1€"/>
+	</bean>
+	
+    <!-- Offers -->
+	<bean id="offer01" class="acme.entities.offers.Offer">
+        <property name="ticker" value="OXXXX-99999"/>
+        <property name="title" value="Sample offer 01"/>
+        <property name="moment" value="2017/08/12 12:00"/>
+        <property name="deadline" value="2018/09/15 13:00"/>
+        <property name="description" value="This is a description of Sample offer 01"/>
+        <property name="minReward" value="1000€"/>
+        <property name="maxReward" value="1300€"/>
+    </bean>
+
+    <bean id="offer02" class="acme.entities.offers.Offer">
+        <property name="ticker" value="OAAAA-45678"/>
+        <property name="title" value="Sample offer 02"/>
+        <property name="moment" value="2019/09/12 14:00"/>
+        <property name="deadline" value="2020/10/15 15:00"/>
+        <property name="description" value="This is a description of Sample offer 02"/>
+        <property name="minReward" value="2000€"/>
+        <property name="maxReward" value="2600€"/>
+    </bean>
+
+    <bean id="offer03" class="acme.entities.offers.Offer">
+        <property name="ticker" value="OAAAA-00000"/>
+        <property name="title" value="Sample offer 03"/>
+        <property name="moment" value="2019/10/12 16:00"/>
+        <property name="deadline" value="2020/11/15 17:00"/>
+        <property name="description" value="This is a description of Sample offer 03"/>
+        <property name="minReward" value="1500€"/>
+        <property name="maxReward" value="2500€"/>
+    </bean>
+    
+    
+            <!-- CommercialBanners -->
+	<bean id="commercialBanner01" class="acme.entities.commercialBanners.CommercialBanner">
+        <property name="picture" value="https://dcewboipbvgi2.cloudfront.net/sites/default/files/styles/article_hero_image/public/040092014_Piglet.jpg?itok=cy6Le8D1"/>
+        <property name="slogan" value="Si quieres, puedes 02"/>
+        <property name="targetURL" value="https://hackertyper.net/"/>
+        <property name="creditCard" value="4188432169509768"/>
+    </bean>
+
+    <bean id="commercialBanner02" class="acme.entities.commercialBanners.CommercialBanner">
+        <property name="picture" value="https://dcewboipbvgi2.cloudfront.net/sites/default/files/styles/article_hero_image/public/040092014_Piglet.jpg?itok=cy6Le8D1"/>
+        <property name="slogan" value="Yo no soy tonto 02"/>
+        <property name="targetURL" value="https://hackertyper.net/"/>
+        <property name="creditCard" value="4909378937697948"/>
+    </bean>
+
+    <bean id="commercialBanner03" class="acme.entities.commercialBanners.CommercialBanner">
+        <property name="picture" value="https://dcewboipbvgi2.cloudfront.net/sites/default/files/styles/article_hero_image/public/040092014_Piglet.jpg?itok=cy6Le8D1"/>
+        <property name="slogan" value="Estudia y aprobarás 02"/>
+        <property name="targetURL" value="https://hackertyper.net/"/>
+        <property name="creditCard" value="4028142202935219"/>
+    </bean>
+    
+                <!-- NonCommercialBanners -->
+	<bean id="nonCommercialBanner01" class="acme.entities.nonCommercialBanners.NonCommercialBanner">
+        <property name="picture" value="https://dcewboipbvgi2.cloudfront.net/sites/default/files/styles/article_hero_image/public/040092014_Piglet.jpg?itok=cy6Le8D1"/>
+        <property name="slogan" value="Si quieres, puedes 03"/>
+        <property name="targetURL" value="https://hackertyper.net/"/>
+        <property name="jingle" value="http://shing.mobile9.com/download/media/702/androidtad_HWH3u1cZ.mp3"/>
+    </bean>
+
+    <bean id="nonCommercialBanner02" class="acme.entities.nonCommercialBanners.NonCommercialBanner">
+        <property name="picture" value="https://dcewboipbvgi2.cloudfront.net/sites/default/files/styles/article_hero_image/public/040092014_Piglet.jpg?itok=cy6Le8D1"/>
+        <property name="slogan" value="Yo no soy tonto 03"/>
+        <property name="targetURL" value="https://hackertyper.net/"/>
+        <property name="jingle" value="http://dight310.byu.edu/media/audio/FreeLoops.com/5/5/Poppy%20Electro%20Live-5562-Free-Loops.com.mp3"/>
+    </bean>
+
+    <bean id="nonCommercialBanner03" class="acme.entities.nonCommercialBanners.NonCommercialBanner">
+        <property name="picture" value="https://dcewboipbvgi2.cloudfront.net/sites/default/files/styles/article_hero_image/public/040092014_Piglet.jpg?itok=cy6Le8D1"/>
+        <property name="slogan" value="Estudia y aprobarás 03"/>
+        <property name="targetURL" value="https://hackertyper.net/"/>
+        <property name="jingle" value=""/>
+    </bean>
+  
+    <!-- CustomisationParameters -->
+    
+    <bean id="customisationParameters01" class="acme.entities.customisationParameters.CustomisationParameter">
+        <property name="spamWordList" value="sex, hard core, viagra, cialis, nigeria, you've won, million dollar"/>
+        <property name="spamThreshold" value="1.0"/>
+    </bean>
+    
+    <bean id="customisationParameters02" class="acme.entities.customisationParameters.CustomisationParameter">
+        <property name="spamWordList" value="sexo, explícito, viagra, cialis, nigeria, has ganado, un millón de dolares"/>
+        <property name="spamThreshold" value="1.0"/>
+    </bean>
+    
+</beans>
