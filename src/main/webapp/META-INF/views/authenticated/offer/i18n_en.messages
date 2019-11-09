@@ -10,5 +10,9 @@ authenticated.offer.form.label.reward= Reward
 authenticated.offer.form.label.minReward= Minimun reward:
 authenticated.offer.form.label.maxReward= Maximun reward:
 authenticated.offer.form.label.ticker= Ticker:
+authenticated.offer.form.label.confirm= Confirm offer's creation
 
+authenticated.offer.form.button.create= Create
 authenticated.offer.form.button.return= Return
+
+authenticated.offer.error.label.confirm= Must confirm you want to create the offer

@@ -10,5 +10,9 @@ authenticated.offer.form.label.reward= Recompensa
 authenticated.offer.form.label.minReward= Recompensa mínima:
 authenticated.offer.form.label.maxReward= Recompensa máxima:
 authenticated.offer.form.label.ticker= Código:
+authenticated.offer.form.label.confirm= Confirmar creación de la oferta
 
+authenticated.offer.form.button.create= Crear
 authenticated.offer.form.button.return= Volver
+
+authenticated.offer.error.label.confirm= Debe confirmar que desea crear la oferta
