@@ -74,6 +74,7 @@ master.menu.authenticated.offer.list= List Offers
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.announcement.list= List Announcements
+master.menu.administrator.announcement.create= Create Announcements
 master.menu.administrator.shutdown = Shut down
 master.menu.administrator.dashboard.listing = Display Indicators
 master.menu.administrator.customisationParameter.list = Display Customisation Parameters
