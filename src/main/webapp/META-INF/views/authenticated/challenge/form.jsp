@@ -10,17 +10,17 @@
 	
 	<acme:form-panel code="authenticated.challenge.form.label.gold">
 		<acme:form-textarea code="authenticated.challenge.form.label.goldGoal" path="goldGoal"/>
-		<acme:form-textarea code="authenticated.challenge.form.label.goldReward" path="goldReward"/>
+		<acme:form-money code="authenticated.challenge.form.label.goldReward" path="goldReward"/>
 	</acme:form-panel>
 	
 	<acme:form-panel code="authenticated.challenge.form.label.silver">
 		<acme:form-textarea code="authenticated.challenge.form.label.silverGoal" path="silverGoal"/>
-		<acme:form-textarea code="authenticated.challenge.form.label.silverReward" path="silverReward"/>
+		<acme:form-money code="authenticated.challenge.form.label.silverReward" path="silverReward"/>
 	</acme:form-panel>
 	
 	<acme:form-panel code="authenticated.challenge.form.label.bronze">
 		<acme:form-textarea code="authenticated.challenge.form.label.bronzeGoal" path="bronzeGoal"/>
-		<acme:form-textarea code="authenticated.challenge.form.label.bronzeReward" path="bronzeReward"/>
+		<acme:form-money code="authenticated.challenge.form.label.bronzeReward" path="bronzeReward"/>
 	</acme:form-panel>
 	
 	<acme:form-return code="authenticated.challenge.form.button.return"/>

@@ -10,17 +10,17 @@
 	
 	<acme:form-panel code="administrator.challenge.form.label.gold">
 		<acme:form-textarea code="administrator.challenge.form.label.goldGoal" path="goldGoal"/>
-		<acme:form-textarea code="administrator.challenge.form.label.goldReward" path="goldReward"/>
+		<acme:form-money code="administrator.challenge.form.label.goldReward" path="goldReward"/>
 	</acme:form-panel>
 	
 	<acme:form-panel code="administrator.challenge.form.label.silver">
 		<acme:form-textarea code="administrator.challenge.form.label.silverGoal" path="silverGoal"/>
-		<acme:form-textarea code="administrator.challenge.form.label.silverReward" path="silverReward"/>
+		<acme:form-money code="administrator.challenge.form.label.silverReward" path="silverReward"/>
 	</acme:form-panel>
 	
 	<acme:form-panel code="administrator.challenge.form.label.bronze">
 		<acme:form-textarea code="administrator.challenge.form.label.bronzeGoal" path="bronzeGoal"/>
-		<acme:form-textarea code="administrator.challenge.form.label.bronzeReward" path="bronzeReward"/>
+		<acme:form-money code="administrator.challenge.form.label.bronzeReward" path="bronzeReward"/>
 	</acme:form-panel>
 	
 	<acme:form-submit test="${command == 'show'}" code="administrator.challenge.form.button.update" action="update"/>
