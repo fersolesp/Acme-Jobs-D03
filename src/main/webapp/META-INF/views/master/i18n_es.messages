@@ -82,6 +82,8 @@ master.menu.administrator.chart= Empresas e Inversores por Sector
 
 master.menu.provider = Proveedor
 master.menu.provider.favourite-link = Enlace favorito
+master.menu.provider.request.list= Listar Solicitudes
+master.menu.provider.request.create= Crear Solicitud
 
 # master.menu.consumer ##########################################################
 

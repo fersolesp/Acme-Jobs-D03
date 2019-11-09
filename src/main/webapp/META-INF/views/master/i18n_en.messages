@@ -83,6 +83,8 @@ master.menu.administrator.chart= Companies and Investors per Sector
 
 master.menu.provider = Provider
 master.menu.provider.favourite-link = Favourite link
+master.menu.provider.request.list= List Requests
+master.menu.provider.request.create= Create Request
 
 # master.menu.consumer ##########################################################
 
