@@ -8,6 +8,12 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+administrator.customisationParameter.form.label.spamWordList = Lista de palabras spam
+administrator.customisationParameter.form.label.spamThreshold = Máximo de palabras
+administrator.customisationParameter.form.button.update = Actualizar
+administrator.customisationParameter.form.button.return = Volver
+
+
 
 administrator.customisationParameter.list.label.spamWordList = Lista de palabras spam
 administrator.customisationParameter.list.label.spamThreshold = Máximo de palabras
