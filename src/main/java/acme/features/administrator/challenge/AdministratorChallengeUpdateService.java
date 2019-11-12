@@ -62,6 +62,14 @@ public class AdministratorChallengeUpdateService implements AbstractUpdateServic
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+
+		Boolean goldRewardCurrency, goldRewardPositive;
+		goldRewardCurrency = entity.getGoldReward().getCurrency().equals("EUR");
+		goldRewardPositive = entity.getGoldReward().getAmount() >= 0;
+
+		errors.state(request, goldRewardCurrency, "goldReward", "La moneda debe ser EUR");
+		errors.state(request, goldRewardPositive, "goldReward", "La cantidad debe ser positiva");
+
 	}
 
 	@Override

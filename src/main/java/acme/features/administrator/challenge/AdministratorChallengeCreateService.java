@@ -55,6 +55,7 @@ public class AdministratorChallengeCreateService implements AbstractCreateServic
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+
 	}
 
 	@Override

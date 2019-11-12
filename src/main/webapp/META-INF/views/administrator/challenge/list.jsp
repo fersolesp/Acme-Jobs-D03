@@ -6,5 +6,4 @@
 <acme:list>
 	<acme:list-column code="administrator.challenge.list.label.deadline" path="deadline" width="20%"/>
 	<acme:list-column code="administrator.challenge.list.label.title" path="title" width="40%"/>
-
 </acme:list>
