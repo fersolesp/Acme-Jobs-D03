@@ -19,14 +19,12 @@ public class AdministratorChallengeShowService implements AbstractShowService<Ad
 
 	@Override
 	public boolean authorise(final Request<Challenge> request) {
-		// TODO Auto-generated method stub
 		assert request != null;
 		return true;
 	}
 
 	@Override
 	public void unbind(final Request<Challenge> request, final Challenge entity, final Model model) {
-		// TODO Auto-generated method stub
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -36,7 +34,6 @@ public class AdministratorChallengeShowService implements AbstractShowService<Ad
 
 	@Override
 	public Challenge findOne(final Request<Challenge> request) {
-		// TODO Auto-generated method stub
 		assert request != null;
 
 		Challenge result;

@@ -15,6 +15,6 @@ public interface AdministratorChallengeRepository extends AbstractRepository {
 	@Query("select c from Challenge c where c.id= ?1")
 	Challenge findOneById(int id);
 
-	@Query("select c from Challenge c where c.deadline > current_date()")
+	@Query("select c from Challenge c")
 	Collection<Challenge> findManyAll();
 }

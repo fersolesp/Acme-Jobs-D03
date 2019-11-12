@@ -21,14 +21,12 @@ public class AdministratorChallengeListService implements AbstractListService<Ad
 
 	@Override
 	public boolean authorise(final Request<Challenge> request) {
-		// TODO Auto-generated method stub
 		assert request != null;
 		return true;
 	}
 
 	@Override
 	public void unbind(final Request<Challenge> request, final Challenge entity, final Model model) {
-		// TODO Auto-generated method stub
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -39,7 +37,6 @@ public class AdministratorChallengeListService implements AbstractListService<Ad
 
 	@Override
 	public Collection<Challenge> findMany(final Request<Challenge> request) {
-		// TODO Auto-generated method stub
 		assert request != null;
 
 		Collection<Challenge> result;
