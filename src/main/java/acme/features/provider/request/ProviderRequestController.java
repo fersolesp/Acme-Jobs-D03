@@ -22,10 +22,14 @@ public class ProviderRequestController extends AbstractController<Provider, Requ
 	@Autowired
 	private ProviderRequestCreateService	createService;
 
+	@Autowired
+	private ProviderRequestShowService		showService;
+
 
 	@PostConstruct
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
+		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 	}
 }

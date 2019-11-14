@@ -13,6 +13,10 @@
 	<acme:form-money code="provider.request.form.label.reward" path="reward"/>
 	<acme:form-textarea code="provider.request.form.label.ticker" path="ticker"/>
 	
+	<jstl:if test="${command=='create'}">
+		<acme:form-checkbox code="provider.request.form.label.accept" path="accept"/>
+	</jstl:if>
+	
 	<acme:form-submit test="${command=='create'}" code="provider.request.form.button.create"
 	action="create"/>	
 	<acme:form-return code="provider.request.form.button.return"/>
