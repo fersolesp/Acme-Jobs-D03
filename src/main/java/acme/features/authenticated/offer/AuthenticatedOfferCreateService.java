@@ -1,7 +1,9 @@
 
 package acme.features.authenticated.offer;
 
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -64,10 +66,48 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 		assert entity != null;
 		assert errors != null;
 
-		boolean isConfirmed;
+		boolean isConfirmed, isUnique, isEuroMin, isEuroMax, isInRange, positiveMinReward, positiveMaxReward;
+		Calendar calendar;
+		Date minimumDeadLine;
+
+		if (!errors.hasErrors("deadline")) {
+			calendar = new GregorianCalendar();
+			calendar.add(Calendar.DAY_OF_MONTH, 7);
+			minimumDeadLine = calendar.getTime();
+			errors.state(request, entity.getDeadline().after(minimumDeadLine), "deadline", "consumer.offer.error.label.deadline");
+		}
 
 		isConfirmed = request.getModel().getBoolean("confirm");
-		errors.state(request, isConfirmed, "confirm", "authenticated.offer.error.label.confirm");
+		errors.state(request, isConfirmed, "confirm", "consumer.offer.error.label.confirm");
+
+		if (!errors.hasErrors("ticker")) {
+			isUnique = this.repository.findOneOfferByTicker(entity.getTicker()) != null;
+			errors.state(request, !isUnique, "ticker", "consumer.offer.error.label.ticker");
+		}
+
+		if (!errors.hasErrors("minReward")) {
+			isEuroMin = entity.getMinReward().getCurrency().equals("EUR") || entity.getMinReward().getCurrency().equals("€");
+			errors.state(request, isEuroMin, "minReward", "consumer.offer.error.label.reward-currency");
+		}
+		if (!errors.hasErrors("maxReward")) {
+			isEuroMax = entity.getMaxReward().getCurrency().equals("EUR") || entity.getMinReward().getCurrency().equals("€");
+			errors.state(request, isEuroMax, "maxReward", "consumer.offer.error.label.reward-currency");
+		}
+
+		if (!errors.hasErrors("minReward") && !errors.hasErrors("maxReward")) {
+			isInRange = entity.getMinReward().getAmount() <= entity.getMaxReward().getAmount();
+			errors.state(request, isInRange, "maxReward", "consumer.offer.error.label.range-reward");
+		}
+
+		if (!errors.hasErrors("minReward")) {
+			positiveMinReward = entity.getMinReward().getAmount() >= 0;
+			errors.state(request, positiveMinReward, "minReward", "consumer.offer.error.label.reward-amount");
+		}
+		if (!errors.hasErrors("maxReward")) {
+			positiveMaxReward = entity.getMaxReward().getAmount() >= 0;
+			errors.state(request, positiveMaxReward, "maxReward", "consumer.offer.error.label.reward-amount");
+		}
+
 	}
 
 	@Override

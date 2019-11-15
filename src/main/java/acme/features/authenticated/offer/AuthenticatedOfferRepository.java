@@ -18,4 +18,7 @@ public interface AuthenticatedOfferRepository extends AbstractRepository {
 	@Query("select o from Offer o where o.deadline > current_date()")
 	Collection<Offer> findManyAll();
 
+	@Query("select o from Offer o where o.ticker = ?1")
+	Offer findOneOfferByTicker(String ticker);
+
 }
