@@ -63,12 +63,31 @@ public class AdministratorChallengeUpdateService implements AbstractUpdateServic
 		assert entity != null;
 		assert errors != null;
 
-		Boolean goldRewardCurrency, goldRewardPositive;
-		goldRewardCurrency = entity.getGoldReward().getCurrency().equals("EUR");
-		goldRewardPositive = entity.getGoldReward().getAmount() >= 0;
+		Boolean goldRewardAmount, goldRewardCurrency, silverRewardCurrency, silverRewardAmount, bronzeRewardCurrency, bronzeRewardAmount;
 
-		errors.state(request, goldRewardCurrency, "goldReward", "La moneda debe ser EUR");
-		errors.state(request, goldRewardPositive, "goldReward", "La cantidad debe ser positiva");
+		if (!errors.hasErrors("goldReward")) {
+			goldRewardCurrency = entity.getGoldReward().getCurrency().equals("EUR");
+			goldRewardAmount = entity.getGoldReward().getAmount() >= 0;
+
+			errors.state(request, goldRewardCurrency, "goldReward", "administrator.challenge.error.reward.incorrect-currency");
+			errors.state(request, goldRewardAmount, "goldReward", "administrator.challenge.error.reward.negative-amount");
+		}
+
+		if (!errors.hasErrors("silverReward")) {
+			silverRewardCurrency = entity.getSilverReward().getCurrency().equals("EUR");
+			silverRewardAmount = entity.getSilverReward().getAmount() >= 0;
+
+			errors.state(request, silverRewardCurrency, "silverReward", "administrator.challenge.error.reward.incorrect-currency");
+			errors.state(request, silverRewardAmount, "silverReward", "administrator.challenge.error.reward.negative-amount");
+		}
+
+		if (!errors.hasErrors("bronzeReward")) {
+			bronzeRewardCurrency = entity.getBronzeReward().getCurrency().equals("EUR");
+			bronzeRewardAmount = entity.getBronzeReward().getAmount() >= 0;
+
+			errors.state(request, bronzeRewardCurrency, "bronzeReward", "administrator.challenge.error.reward.incorrect-currency");
+			errors.state(request, bronzeRewardAmount, "bronzeReward", "administrator.challenge.error.reward.negative-amount");
+		}
 
 	}
 
