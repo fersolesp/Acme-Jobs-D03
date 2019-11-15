@@ -13,7 +13,7 @@ provider.request.form.label.accept= Do you want to create the request?
 
 provider.request.error.must-accept = Must accept the creation
 provider.request.error.duplicated= The ticker is duplicated
-provider.request.error.deadline= The deadline must be in the future
+provider.request.error.deadline= The deadline must be more than 7 days in the future
 provider.request.error.reward-currency= It must be EUR
 provider.request.error.reward-amount= The reward's amount must be positive or 0
 

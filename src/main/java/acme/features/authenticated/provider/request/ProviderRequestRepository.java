@@ -1,5 +1,5 @@
 
-package acme.features.provider.request;
+package acme.features.authenticated.provider.request;
 
 import java.util.Collection;
 

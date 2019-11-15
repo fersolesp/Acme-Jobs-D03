@@ -1,5 +1,5 @@
 
-package acme.features.provider.request;
+package acme.features.authenticated.provider.request;
 
 import javax.annotation.PostConstruct;
 
@@ -13,7 +13,7 @@ import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 
 @Controller
-@RequestMapping("/provider/request/")
+@RequestMapping("/authenticated/provider/request/")
 public class ProviderRequestController extends AbstractController<Provider, Request> {
 
 	@Autowired

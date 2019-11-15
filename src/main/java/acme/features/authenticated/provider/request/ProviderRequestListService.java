@@ -1,5 +1,7 @@
 
-package acme.features.provider.request;
+package acme.features.authenticated.provider.request;
+
+import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -7,10 +9,10 @@ import org.springframework.stereotype.Service;
 import acme.entities.requests.Request;
 import acme.entities.roles.Provider;
 import acme.framework.components.Model;
-import acme.framework.services.AbstractShowService;
+import acme.framework.services.AbstractListService;
 
 @Service
-public class ProviderRequestShowService implements AbstractShowService<Provider, Request> {
+public class ProviderRequestListService implements AbstractListService<Provider, Request> {
 
 	@Autowired
 	ProviderRequestRepository repository;
@@ -29,19 +31,16 @@ public class ProviderRequestShowService implements AbstractShowService<Provider,
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-
-		request.unbind(entity, model, "title", "moment", "deadline", "text", "reward", "ticker");
+		request.unbind(entity, model, "title", "moment", "deadline", "reward");
 	}
 
 	@Override
-	public Request findOne(final acme.framework.components.Request<Request> request) {
+	public Collection<Request> findMany(final acme.framework.components.Request<Request> request) {
 		// TODO Auto-generated method stub
 		assert request != null;
-		Request result;
-		int id;
 
-		id = request.getModel().getInteger("id");
-		result = this.repository.findOneById(id);
+		Collection<Request> result;
+		result = this.repository.findManyAll();
 		return result;
 	}
 

@@ -1,5 +1,5 @@
 
-package acme.features.provider.request;
+package acme.features.authenticated.provider.request;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -79,22 +79,26 @@ public class ProviderRequestCreateService implements AbstractCreateService<Provi
 
 		if (!errors.hasErrors("deadline")) {
 			calendar = new GregorianCalendar();
-			calendar.add(Calendar.DAY_OF_MONTH, 1);
+			calendar.add(Calendar.DAY_OF_MONTH, 7);
 			minimumDeadLine = calendar.getTime();
 			errors.state(request, entity.getDeadline().after(minimumDeadLine), "deadline", "provider.request.error.deadline");
 		}
 
-		isDuplicated = this.repository.findOneRequestByTicker(entity.getTicker()) != null;
-		errors.state(request, !isDuplicated, "ticker", "provider.request.error.duplicated");
+		if (!errors.hasErrors("ticker")) {
+			isDuplicated = this.repository.findOneRequestByTicker(entity.getTicker()) != null;
+			errors.state(request, !isDuplicated, "ticker", "provider.request.error.duplicated");
+		}
 
 		isAccepted = request.getModel().getBoolean("accept");
 		errors.state(request, isAccepted, "accept", "provider.request.error.must-accept");
 
-		isEuro = entity.getReward().getCurrency().equals("EUR");
-		errors.state(request, isEuro, "reward", "provider.request.error.reward-currency");
+		if (!errors.hasErrors("reward")) {
+			isEuro = entity.getReward().getCurrency().equals("EUR");
+			errors.state(request, isEuro, "reward", "provider.request.error.reward-currency");
 
-		positiveReward = entity.getReward().getAmount() >= 0;
-		errors.state(request, positiveReward, "reward", "provider.request.error.reward-amount");
+			positiveReward = entity.getReward().getAmount() >= 0;
+			errors.state(request, positiveReward, "reward", "provider.request.error.reward-amount");
+		}
 	}
 
 	@Override

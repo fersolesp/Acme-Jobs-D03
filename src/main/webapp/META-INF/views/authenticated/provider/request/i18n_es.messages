@@ -13,7 +13,7 @@ provider.request.form.label.accept= ¿Desea crear la recompensa?
 
 provider.request.error.must-accept= Debe aceptar la creación
 provider.request.error.duplicated= El código está duplicado
-provider.request.error.deadline= La fecha límite debe estar en el futuro
+provider.request.error.deadline= La fecha límite debe ser más de 7 días en el futuro
 provider.request.error.reward-currency= La moneda debe ser EUR
 provider.request.error.reward-amount= El valor de la recompensa debe ser positivo ó 0
 
