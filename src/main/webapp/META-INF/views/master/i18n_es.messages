@@ -77,6 +77,10 @@ master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.dashboard.listing = Mostrar Indicadores
 master.menu.administrator.customisationParameter.list = Mostrar Parámetros Customizables
 master.menu.administrator.chart= Empresas e Inversores por Sector
+master.menu.administrator.commercial-banner.list = Listar Pancarta Comercial
+master.menu.administrator.commercial-banner.create = Crear Pancarta Comercial
+master.menu.administrator.non-commercial-banner.list = Listar Pancarta No Comercial
+master.menu.administrator.non-commercial-banner.create = Crear Pancarta No Comercial
 
 # master.menu.provider ########################################################
 

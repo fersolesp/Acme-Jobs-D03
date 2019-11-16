@@ -78,6 +78,10 @@ master.menu.administrator.shutdown = Shut down
 master.menu.administrator.dashboard.listing = Display Indicators
 master.menu.administrator.customisationParameter.list = Display Customisation Parameters
 master.menu.administrator.chart= Companies and Investors per Sector
+master.menu.administrator.commercial-banner.list = List Commercial Banner
+master.menu.administrator.commercial-banner.create = Create Commercial Banner
+master.menu.administrator.non-commercial-banner.list = List Non Commercial Banner
+master.menu.administrator.non-commercial-banner.create = Create Non Commercial Banner
 
 # master.menu.provider ########################################################
 
