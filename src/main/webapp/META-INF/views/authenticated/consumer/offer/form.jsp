@@ -5,7 +5,9 @@
 
 <acme:form>
 	<acme:form-textbox code="authenticated.offer.form.label.title" path="title"/>
-	<acme:form-moment code="authenticated.offer.form.label.moment" path="moment" readonly="true"/>
+	<jstl:if test="${command != 'create'}">
+		<acme:form-moment code="authenticated.offer.form.label.moment" path="moment" readonly="true"/>
+	</jstl:if>
 	<acme:form-moment code="authenticated.offer.form.label.deadline" path="deadline"/>
 	<acme:form-textarea code="authenticated.offer.form.label.description" path="description"/>
 	<acme:form-textbox code="authenticated.offer.form.label.ticker" path="ticker"/>
@@ -13,6 +15,9 @@
 	<acme:form-money code="authenticated.offer.form.label.minReward" path="minReward"/>
 	<acme:form-money code="authenticated.offer.form.label.maxReward" path="maxReward"/>
 	</acme:form-panel>
-	
+	<jstl:if test="${command == 'create'}">
+		<acme:form-checkbox code="authenticated.offer.form.label.confirm" path="confirm"/>
+		<acme:form-submit code="authenticated.offer.form.button.create" action="create"/>	
+	</jstl:if>
 	<acme:form-return code="authenticated.offer.form.button.return"/>
 </acme:form>
