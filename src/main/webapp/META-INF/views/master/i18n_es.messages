@@ -72,6 +72,8 @@ master.menu.authenticated.offer.list= Listas de Ofertas
 
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
+master.menu.administrator.companyRecord.list = Lista de Registro de Empresa
+master.menu.administrator.companyRecord.create = Crear Registro de Empresa
 master.menu.administrator.announcement.list= Listar Anuncios
 master.menu.administrator.announcement.create= Crear Anuncios
 master.menu.administrator.shutdown = Parar el sistema
