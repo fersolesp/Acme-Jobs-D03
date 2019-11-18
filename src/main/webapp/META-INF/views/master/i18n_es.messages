@@ -74,21 +74,29 @@ master.menu.administrator = Administrador
 master.menu.administrator.challenge.list = Administrar Desafíos
 master.menu.administrator.challenge.create = Crear un Desafío
 master.menu.administrator.user-accounts = Cuentas de usuario
+master.menu.administrator.companyRecord.list = Lista de Registro de Empresa
+master.menu.administrator.companyRecord.create = Crear Registro de Empresa
 master.menu.administrator.announcement.list= Listar Anuncios
+master.menu.administrator.announcement.create= Crear Anuncios
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.dashboard.listing = Mostrar Indicadores
 master.menu.administrator.customisationParameter.list = Mostrar Parámetros Customizables
 master.menu.administrator.chart= Empresas e Inversores por Sector
+master.menu.administrator.investor-records.create = Crear Registros de Inversores
+master.menu.administrator.investor-records.list = Lista de Registros de Inversores
 
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor
 master.menu.provider.favourite-link = Enlace favorito
+master.menu.provider.request.list= Listar Solicitudes
+master.menu.provider.request.create= Crear Solicitud
 
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumidor
 master.menu.consumer.favourite-link = Enlace favorito
+master.menu.consumer.offer.create = Crear oferta
 
 # master.menu.user-account ####################################################
 
