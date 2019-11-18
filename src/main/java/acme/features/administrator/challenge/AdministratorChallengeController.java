@@ -23,7 +23,6 @@ public class AdministratorChallengeController extends AbstractController<Adminis
 	private AdministratorChallengeShowService	showService;
 
 	@Autowired
-
 	private AdministratorChallengeCreateService	createService;
 
 	@Autowired
