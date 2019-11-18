@@ -80,6 +80,8 @@ master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.dashboard.listing = Mostrar Indicadores
 master.menu.administrator.customisationParameter.list = Mostrar Parámetros Customizables
 master.menu.administrator.chart= Empresas e Inversores por Sector
+master.menu.administrator.investor-records.create = Crear Registros de Inversores
+master.menu.administrator.investor-records.list = Lista de Registros de Inversores
 
 # master.menu.provider ########################################################
 

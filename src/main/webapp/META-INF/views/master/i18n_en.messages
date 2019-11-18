@@ -81,6 +81,8 @@ master.menu.administrator.shutdown = Shut down
 master.menu.administrator.dashboard.listing = Display Indicators
 master.menu.administrator.customisationParameter.list = Display Customisation Parameters
 master.menu.administrator.chart= Companies and Investors per Sector
+master.menu.administrator.investor-records.create = Create Investor Records
+master.menu.administrator.investor-records.list = List Investor Records
 
 # master.menu.provider ########################################################
 

@@ -90,6 +90,9 @@
 			<acme:menu-suboption code="master.menu.administrator.dashboard.listing" action="/administrator/dashboard/listing"/>
 			<acme:menu-suboption code="master.menu.administrator.chart" action="/administrator/chart/chart"/>
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.investor-records.create" action="/administrator/investor-records/create"/>
+			<acme:menu-suboption code="master.menu.administrator.investor-records.list" action="/administrator/investor-records/list"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 		</acme:menu-option>
 
