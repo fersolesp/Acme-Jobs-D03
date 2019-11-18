@@ -71,6 +71,8 @@ master.menu.authenticated.offer.list= Listas de Ofertas
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
+master.menu.administrator.challenge.list = Administrar Desafíos
+master.menu.administrator.challenge.create = Crear un Desafío
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.companyRecord.list = Lista de Registro de Empresa
 master.menu.administrator.companyRecord.create = Crear Registro de Empresa
