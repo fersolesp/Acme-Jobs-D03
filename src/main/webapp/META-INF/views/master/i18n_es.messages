@@ -67,39 +67,39 @@ master.menu.authenticated.request.list= Lista de Solicitudes
 master.menu.authenticated.announcement.list= Lista de Anuncios
 master.menu.authenticated.challenge.list= Lista de Desafíos
 master.menu.authenticated.investor-records.list = Lista de Registros de Inversores
-master.menu.authenticated.offer.list= Listas de Ofertas
+master.menu.authenticated.offer.list= Lista de Ofertas
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
 master.menu.administrator.challenge.list = Administrar Desafíos
 master.menu.administrator.challenge.create = Crear un Desafío
 master.menu.administrator.user-accounts = Cuentas de usuario
-master.menu.administrator.companyRecord.list = Lista de Registro de Empresa
-master.menu.administrator.companyRecord.create = Crear Registro de Empresa
-master.menu.administrator.announcement.list= Listar Anuncios
-master.menu.administrator.announcement.create= Crear Anuncios
+master.menu.administrator.companyRecord.list = Administrar Registros de Empresas
+master.menu.administrator.companyRecord.create = Crear un Registro de Empresa
+master.menu.administrator.announcement.list= Administrar Anuncios
+master.menu.administrator.announcement.create= Crear un Anuncio
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.dashboard.listing = Mostrar Indicadores
 master.menu.administrator.customisationParameter.list = Mostrar Parámetros Customizables
-master.menu.administrator.chart= Empresas e Inversores por Sector
-master.menu.administrator.commercial-banner.list = Listar "Banner" Comercial
-master.menu.administrator.commercial-banner.create = Crear "Banner" Comercial
-master.menu.administrator.non-commercial-banner.list = Listar "Banner" No Comercial
-master.menu.administrator.non-commercial-banner.create = Crear "Banner" No Comercial
-master.menu.administrator.investor-records.create = Crear Registros de Inversores
-master.menu.administrator.investor-records.list = Lista de Registros de Inversores
+master.menu.administrator.chart= Gráfico de Empresas e Inversores por Sector
+master.menu.administrator.commercial-banner.list = Administrar "Banners" Comerciales
+master.menu.administrator.commercial-banner.create = Crear un "Banner" Comercial
+master.menu.administrator.non-commercial-banner.list = Administrar "Banners" No Comerciales
+master.menu.administrator.non-commercial-banner.create = Crear un "Banner" No Comercial
+master.menu.administrator.investor-records.create = Crear un Registro de Inversor
+master.menu.administrator.investor-records.list = Administrar Registros de Inversores
 
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor
 master.menu.provider.favourite-link = Enlace favorito
-master.menu.provider.request.create= Crear Solicitud
+master.menu.provider.request.create= Crear una Solicitud
 
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumidor
 master.menu.consumer.favourite-link = Enlace favorito
-master.menu.consumer.offer.create = Crear oferta
+master.menu.consumer.offer.create = Crear una Oferta
 
 # master.menu.user-account ####################################################
 

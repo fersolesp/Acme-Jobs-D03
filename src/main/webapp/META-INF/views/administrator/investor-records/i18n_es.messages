@@ -8,16 +8,16 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-administrator.investor-records.form.label.investorName = Nombre del inversor:
+administrator.investor-records.form.label.investorName = Inversor:
 administrator.investor-records.form.label.workSector = Sector de trabajo:
 administrator.investor-records.form.label.investingStatement = Declaración de inversión:
 administrator.investor-records.form.label.stars = Estrellas:
 administrator.investor-records.form.button.return = Volver
-administrator.investor-records.form.button.submit = Enviar
+administrator.investor-records.form.button.create = Crear
 administrator.investor-records.form.button.update = Actualizar
 administrator.investor-records.form.button.delete = Eliminar
 
-administrator.investor-records.list.label.investorName = Nombre del inversor
+administrator.investor-records.list.label.investorName = Inversor
 administrator.investor-records.list.label.workSector = Sector de trabajo
 administrator.investor-records.list.label.investingStatement = Declaración de inversión
 administrator.investor-records.list.label.stars = Estrellas

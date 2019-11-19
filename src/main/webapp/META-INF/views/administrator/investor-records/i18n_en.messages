@@ -8,16 +8,16 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-administrator.investor-records.form.label.investorName = Investor's name:
+administrator.investor-records.form.label.investorName = Investor:
 administrator.investor-records.form.label.workSector = Work sector:
 administrator.investor-records.form.label.investingStatement = Investing statement:
 administrator.investor-records.form.label.stars = Stars:
 administrator.investor-records.form.button.return = Return
-administrator.investor-records.form.button.submit = Submit
+administrator.investor-records.form.button.create = Create
 administrator.investor-records.form.button.update = Update
-administrator.investor-records.form.button.delete = Detele
+administrator.investor-records.form.button.delete = Delete
 
-administrator.investor-records.list.label.investorName = Investor's name
+administrator.investor-records.list.label.investorName = Investor
 administrator.investor-records.list.label.workSector = Work sector
 administrator.investor-records.list.label.investingStatement = Investing statement
 administrator.investor-records.list.label.stars = Stars
