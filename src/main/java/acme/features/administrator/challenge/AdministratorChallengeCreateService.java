@@ -59,7 +59,7 @@ public class AdministratorChallengeCreateService implements AbstractCreateServic
 		Boolean goldRewardAmount, goldRewardCurrency, silverRewardCurrency, silverRewardAmount, bronzeRewardCurrency, bronzeRewardAmount;
 
 		if (!errors.hasErrors("goldReward")) {
-			goldRewardCurrency = entity.getGoldReward().getCurrency().equals("EUR");
+			goldRewardCurrency = entity.getGoldReward().getCurrency().equals("EUR") || entity.getGoldReward().getCurrency().equals("€");
 			goldRewardAmount = entity.getGoldReward().getAmount() >= 0;
 
 			errors.state(request, goldRewardCurrency, "goldReward", "administrator.challenge.error.reward.incorrect-currency");
@@ -67,7 +67,7 @@ public class AdministratorChallengeCreateService implements AbstractCreateServic
 		}
 
 		if (!errors.hasErrors("silverReward")) {
-			silverRewardCurrency = entity.getSilverReward().getCurrency().equals("EUR");
+			silverRewardCurrency = entity.getSilverReward().getCurrency().equals("EUR") || entity.getSilverReward().getCurrency().equals("€");
 			silverRewardAmount = entity.getSilverReward().getAmount() >= 0;
 
 			errors.state(request, silverRewardCurrency, "silverReward", "administrator.challenge.error.reward.incorrect-currency");
@@ -75,7 +75,7 @@ public class AdministratorChallengeCreateService implements AbstractCreateServic
 		}
 
 		if (!errors.hasErrors("bronzeReward")) {
-			bronzeRewardCurrency = entity.getBronzeReward().getCurrency().equals("EUR");
+			bronzeRewardCurrency = entity.getBronzeReward().getCurrency().equals("EUR") || entity.getBronzeReward().getCurrency().equals("€");
 			bronzeRewardAmount = entity.getBronzeReward().getAmount() >= 0;
 
 			errors.state(request, bronzeRewardCurrency, "bronzeReward", "administrator.challenge.error.reward.incorrect-currency");
