@@ -5,7 +5,7 @@
 
 <acme:form>
 	<acme:form-textbox code="authenticated.offer.form.label.title" path="title"/>
-	<acme:form-moment code="authenticated.offer.form.label.moment" path="moment" readonly="true"/>
+	<acme:form-moment code="authenticated.offer.form.label.moment" path="moment"/>
 	<acme:form-moment code="authenticated.offer.form.label.deadline" path="deadline"/>
 	<acme:form-textarea code="authenticated.offer.form.label.description" path="description"/>
 	<acme:form-textbox code="authenticated.offer.form.label.ticker" path="ticker"/>
