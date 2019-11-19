@@ -40,7 +40,7 @@ public class AdministratorCustomisationParameterListService implements AbstractL
 		assert request != null;
 
 		Collection<CustomisationParameter> result;
-		result = this.repository.findManyAll();
+		result = this.repository.findManyCustomisationParameters();
 
 		return result;
 	}
