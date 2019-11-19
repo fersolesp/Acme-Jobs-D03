@@ -1,7 +1,3 @@
-consumer.offer.list.label.title= Título
-consumer.offer.list.label.moment= Momento
-consumer.offer.list.label.deadline= Fecha límite
-
 consumer.offer.form.label.title= Título:
 consumer.offer.form.label.moment= Momento:
 consumer.offer.form.label.deadline= Fecha límite:
