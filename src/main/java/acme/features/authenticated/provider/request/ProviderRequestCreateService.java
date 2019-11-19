@@ -79,7 +79,6 @@ public class ProviderRequestCreateService implements AbstractCreateService<Provi
 
 		if (!errors.hasErrors("deadline")) {
 			calendar = new GregorianCalendar();
-			calendar.add(Calendar.DAY_OF_MONTH, 0);
 			minimumDeadLine = calendar.getTime();
 			errors.state(request, entity.getDeadline().after(minimumDeadLine), "deadline", "provider.request.error.deadline");
 		}
