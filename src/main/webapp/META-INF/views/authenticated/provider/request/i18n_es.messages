@@ -1,8 +1,3 @@
-provider.request.list.label.title= Título
-provider.request.list.label.moment= Momento
-provider.request.list.label.deadline= Fecha límite
-provider.request.list.label.reward= Recompensa
-
 provider.request.form.label.title= Título:
 provider.request.form.label.moment= Momento:
 provider.request.form.label.deadline= Fecha límite:
@@ -13,8 +8,8 @@ provider.request.form.label.accept= ¿Desea crear la recompensa?
 
 provider.request.error.must-accept= Debe aceptar la creación
 provider.request.error.duplicated= El código está duplicado
-provider.request.error.deadline= La fecha límite debe ser más de 7 días en el futuro
-provider.request.error.reward-currency= La moneda debe ser EUR
+provider.request.error.deadline= La fecha límite debe estar en el futuro
+provider.request.error.reward-currency= La moneda debe ser EUR o €
 provider.request.error.reward-amount= El valor de la recompensa debe ser positivo ó 0
 
 provider.request.form.button.create= Crear

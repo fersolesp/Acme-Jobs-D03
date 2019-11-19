@@ -17,19 +17,12 @@ import acme.framework.controllers.AbstractController;
 public class ProviderRequestController extends AbstractController<Provider, Request> {
 
 	@Autowired
-	private ProviderRequestListService		listService;
-
-	@Autowired
-	private ProviderRequestCreateService	createService;
-
-	@Autowired
-	private ProviderRequestShowService		showService;
+	private ProviderRequestCreateService createService;
 
 
 	@PostConstruct
 	private void initialise() {
-		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
-		super.addBasicCommand(BasicCommand.SHOW, this.showService);
+
 	}
 }

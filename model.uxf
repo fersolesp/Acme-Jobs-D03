@@ -463,7 +463,7 @@ Request
 Challenge
 --
 + title: String {NotBlank}
-+ deadline: Date {Temporal(TIMESTAMP),Future}
++ deadline: Date {Temporal(TIMESTAMP),Future , NotNull}
 + description: String {NotBlank}
 + goldGoal: String {NotBlank}
 + goldReward: Money {NotNull}

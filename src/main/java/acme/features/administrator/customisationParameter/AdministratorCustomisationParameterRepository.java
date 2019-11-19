@@ -12,6 +12,9 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AdministratorCustomisationParameterRepository extends AbstractRepository {
 
+	@Query("select c from CustomisationParameter c where c.id = ?1")
+	CustomisationParameter findOneCustomisationParameterById(int id);
+
 	@Query("select c from CustomisationParameter c")
-	Collection<CustomisationParameter> findManyAll();
+	Collection<CustomisationParameter> findManyCustomisationParameters();
 }
