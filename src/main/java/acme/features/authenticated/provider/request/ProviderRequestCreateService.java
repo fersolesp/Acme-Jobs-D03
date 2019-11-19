@@ -79,7 +79,7 @@ public class ProviderRequestCreateService implements AbstractCreateService<Provi
 
 		if (!errors.hasErrors("deadline")) {
 			calendar = new GregorianCalendar();
-			calendar.add(Calendar.DAY_OF_MONTH, 7);
+			calendar.add(Calendar.DAY_OF_MONTH, 0);
 			minimumDeadLine = calendar.getTime();
 			errors.state(request, entity.getDeadline().after(minimumDeadLine), "deadline", "provider.request.error.deadline");
 		}
@@ -93,7 +93,7 @@ public class ProviderRequestCreateService implements AbstractCreateService<Provi
 		errors.state(request, isAccepted, "accept", "provider.request.error.must-accept");
 
 		if (!errors.hasErrors("reward")) {
-			isEuro = entity.getReward().getCurrency().equals("EUR");
+			isEuro = entity.getReward().getCurrency().equals("EUR") || entity.getReward().getCurrency().equals("€");
 			errors.state(request, isEuro, "reward", "provider.request.error.reward-currency");
 
 			positiveReward = entity.getReward().getAmount() >= 0;
