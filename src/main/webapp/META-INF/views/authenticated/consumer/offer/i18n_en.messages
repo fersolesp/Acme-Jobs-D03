@@ -1,19 +1,19 @@
-authenticated.offer.list.label.title= Title
-authenticated.offer.list.label.moment= Moment
-authenticated.offer.list.label.deadline= Deadline
+consumer.offer.list.label.title= Title
+consumer.offer.list.label.moment= Moment
+consumer.offer.list.label.deadline= Deadline
 
-authenticated.offer.form.label.title= Title:
-authenticated.offer.form.label.moment= Moment:
-authenticated.offer.form.label.deadline= Deadline:
-authenticated.offer.form.label.description= Description: 
-authenticated.offer.form.label.reward= Reward
-authenticated.offer.form.label.minReward= Minimun reward:
-authenticated.offer.form.label.maxReward= Maximun reward:
-authenticated.offer.form.label.ticker= Ticker:
-authenticated.offer.form.label.confirm= Confirm offer's creation
+consumer.offer.form.label.title= Title:
+consumer.offer.form.label.moment= Moment:
+consumer.offer.form.label.deadline= Deadline:
+consumer.offer.form.label.description= Description: 
+consumer.offer.form.label.reward= Reward
+consumer.offer.form.label.minReward= Minimun reward:
+consumer.offer.form.label.maxReward= Maximun reward:
+consumer.offer.form.label.ticker= Ticker:
+consumer.offer.form.label.confirm= Confirm offer's creation
 
-authenticated.offer.form.button.create= Create
-authenticated.offer.form.button.return= Return
+consumer.offer.form.button.create= Create
+consumer.offer.form.button.return= Return
 
 consumer.offer.error.label.deadline= Must be a week at least between the creation moment and deadline
 consumer.offer.error.label.confirm= Must confirm you want to create the offer
