@@ -93,7 +93,6 @@ master.menu.administrator.investor-records.list = Lista de Registros de Inversor
 
 master.menu.provider = Proveedor
 master.menu.provider.favourite-link = Enlace favorito
-master.menu.provider.request.list= Listar Solicitudes
 master.menu.provider.request.create= Crear Solicitud
 
 # master.menu.consumer ##########################################################

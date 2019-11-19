@@ -12,9 +12,6 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface ProviderRequestRepository extends AbstractRepository {
 
-	@Query("select a from Request a where a.id= ?1")
-	Request findOneById(int id);
-
 	@Query("select a from Request a where a.deadline>current_time()")
 	Collection<Request> findManyAll();
 
