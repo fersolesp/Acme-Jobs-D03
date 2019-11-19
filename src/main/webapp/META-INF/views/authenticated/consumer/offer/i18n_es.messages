@@ -11,9 +11,9 @@ consumer.offer.form.label.confirm= Confirmar creación de la oferta
 consumer.offer.form.button.create= Crear
 consumer.offer.form.button.return= Volver
 
-consumer.offer.error.label.deadline= Debe haber una semana al menos entre el momento de la creación y la fecha límite
+consumer.offer.error.label.deadline= Debe estar en el futuro
 consumer.offer.error.label.confirm= Debe confirmar que desea crear la oferta
-consumer.offer.error.label.ticker= El codigo introducido ya esta en uso
-consumer.offer.error.label.reward-currency= La moneda debe estar en EUR
+consumer.offer.error.label.ticker= El código introducido ya esta en uso
+consumer.offer.error.label.reward-currency= La moneda debe ser "EUR" o "€"
 consumer.offer.error.label.range-reward= La recompensa minima debe ser menor que la recompensa maxima
-consumer.offer.error.label.reward-amount= La cantidad debe ser mayor que 0
+consumer.offer.error.label.reward-amount= No se permiten cantidades negativas

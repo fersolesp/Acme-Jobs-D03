@@ -13,6 +13,6 @@
 	<acme:form-submit test="${command == 'show'}" code="administrator.non-commercial-banner.form.button.delete" action="delete"/>
 	<acme:form-submit test="${command == 'update'}" code="administrator.non-commercial-banner.form.button.update" action="update"/>
 	<acme:form-submit test="${command == 'delete'}" code="administrator.non-commercial-banner.form.button.delete" action="delete"/>
-	<acme:form-submit test="${command == 'create'}" code="administrator.non-commercial-banner.form.button.submit" action="create"/>
+	<acme:form-submit test="${command == 'create'}" code="administrator.non-commercial-banner.form.button.create" action="create"/>
 	<acme:form-return code="administrator.commercial-banner.form.button.return"/>
 </acme:form>
