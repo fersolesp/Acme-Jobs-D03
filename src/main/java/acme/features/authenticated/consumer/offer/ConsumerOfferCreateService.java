@@ -72,7 +72,6 @@ public class ConsumerOfferCreateService implements AbstractCreateService<Consume
 
 		if (!errors.hasErrors("deadline")) {
 			calendar = new GregorianCalendar();
-			calendar.add(Calendar.DAY_OF_MONTH, 7);
 			minimumDeadLine = calendar.getTime();
 			errors.state(request, entity.getDeadline().after(minimumDeadLine), "deadline", "consumer.offer.error.label.deadline");
 		}
