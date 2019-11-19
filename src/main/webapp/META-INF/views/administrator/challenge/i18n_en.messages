@@ -20,5 +20,5 @@ administrator.challenge.form.button.update = Update
 administrator.challenge.form.button.delete = Delete
 administrator.challenge.form.button.return= Return
 
-administrator.challenge.error.reward.incorrect-currency = Currency must be "EUR"
+administrator.challenge.error.reward.incorrect-currency = Currency must be "EUR" or "€"
 administrator.challenge.error.reward.negative-amount = Amount mustn't be negative
