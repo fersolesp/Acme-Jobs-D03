@@ -92,6 +92,11 @@
 			<acme:menu-suboption code="master.menu.administrator.dashboard.listing" action="/administrator/dashboard/listing"/>
 			<acme:menu-suboption code="master.menu.administrator.chart" action="/administrator/chart/chart"/>
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.commercial-banner.list" action="/administrator/commercial-banner/list"/>
+			<acme:menu-suboption code="master.menu.administrator.commercial-banner.create" action="/administrator/commercial-banner/create"/>
+			<acme:menu-suboption code="master.menu.administrator.non-commercial-banner.list" action="/administrator/non-commercial-banner/list"/>
+			<acme:menu-suboption code="master.menu.administrator.non-commercial-banner.create" action="/administrator/non-commercial-banner/create"/>
+      <acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.investor-records.create" action="/administrator/investor-records/create"/>
 			<acme:menu-suboption code="master.menu.administrator.investor-records.list" action="/administrator/investor-records/list"/>
 			<acme:menu-separator/>
